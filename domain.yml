@@ -1,0 +1,46 @@
+version: "3.1"
+
+intents:
+  - cholera
+  - hepatitisc
+  - cancer
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you, How can I assist you? You can go ahead and mention your health problems"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_cholera:
+  - text: "Cholera is a bacterial infection causing severe diarrhea and dehydration; symptoms include watery diarrhea, vomiting, rapid heart rate, low blood pressure, muscle cramps, dry mucous membranes, thirst, lethargy, sunken eyes, and decreased urine output; recommended foods are boiled or bottled water, rice, bananas, yogurt, and broth-based soups; common medicines are oral rehydration salts (ORS), antibiotics like doxycycline and azithromycin, intravenous fluids, zinc supplements, and antiemetics; health tips include practicing good hygiene, drinking safe water, avoiding raw seafood, seeking medical attention promptly, and following vaccination recommendations if traveling to endemic areas."
+
+  utter_hepatitisc:
+  - text: "Hepatitis C is a viral infection that causes liver inflammation, potentially leading to serious liver damage; symptoms include fatigue, jaundice, dark urine, abdominal pain, loss of appetite, nausea, joint pain, itchy skin, swelling in the legs, and easy bruising; recommended foods are lean proteins, fruits, vegetables, whole grains, and nuts; common medicines are antiviral drugs such as sofosbuvir, ledipasvir, glecaprevir, pibrentasvir, and ribavirin; health tips include avoiding alcohol, getting regular medical checkups, maintaining a healthy diet, exercising regularly, and getting vaccinated for hepatitis A and B."
+
+  utter_cancer:
+  - text: "Cancer is a disease marked by uncontrolled cell growth and spread in the body; symptoms include unexplained weight loss, fatigue, chronic pain, skin changes, persistent cough, unusual bleeding, indigestion, bowel changes, lumps, and fever; recommended foods are leafy greens, berries, nuts and seeds, fatty fish, and whole grains; common medicines are chemotherapy drugs, targeted therapy drugs, immunotherapy drugs, hormone therapy drugs, and pain relievers; health tips include maintaining a nutritious diet, staying active, adhering to treatments, managing stress, and regular communication with healthcare providers."
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am AI Medical Assistant, powered by ABDULLAHISAsoftwarecom.."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
